@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>TutorialDST</display-name>
+	<welcome-file-list>
+		<welcome-file>sceltaOperazione.html</welcome-file>
+		<welcome-file>sceltaOperazione.htm</welcome-file>
+		<welcome-file>sceltaOperazione.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>scelta</servlet-name>
+		<servlet-class>
+			org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>scelta</servlet-name>
+		<url-pattern>/scelta</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addizione</servlet-name>
+		<servlet-class>
+			org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addizione</servlet-name>
+		<url-pattern>/addizione</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>sottrazione</servlet-name>
+		<servlet-class>
+			org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sottrazione</servlet-name>
+		<url-pattern>/sottrazione</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>moltiplicazione</servlet-name>
+		<servlet-class>
+			org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>moltiplicazione</servlet-name>
+		<url-pattern>/moltiplicazione</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>divisione</servlet-name>
+		<servlet-class>
+			org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>divisione</servlet-name>
+		<url-pattern>/divisione</url-pattern>
+	</servlet-mapping>
+</web-app>
